@@ -14,10 +14,18 @@ echo "Welcome to the Arithmetic Computations Program"
 #-----------New Branch-----------------
 
 
- echo "Operation :- a + b * c "
+ 	echo "Operation :- a + b * c "
 
    solution1=$(( $a + ($b * $c) ))
    echo $solution1
 
 
 #-----------New Branch-----------------
+ 	echo "Operation :- a % b + c"
+
+   solution2=$(( ($a % $b) + $c ))
+   echo $solution2
+
+#----------New Branch------------------
+
+	
