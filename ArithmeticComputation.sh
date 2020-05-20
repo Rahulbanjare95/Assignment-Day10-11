@@ -36,3 +36,14 @@ echo "Welcome to the Arithmetic Computations Program"
 	echo "Opertion :- c + a / b "
    solution4=$(( $c + $a / $b ))
    echo $solution4
+
+#---------New Branch-----------------
+
+	echo "Adding Solutions Into a Dictionary"
+
+	declare -A solution
+	solution[1]=$(( $solution1 ));
+	solution[2]=$(( $solution2 ));
+	solution[3]=$(( $solution3 ));
+	solution[4]=$(( $solution4 ));
+	echo ${solution[@]}
