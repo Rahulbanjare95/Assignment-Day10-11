@@ -5,8 +5,19 @@ echo "Welcome to the Arithmetic Computations Program"
 
 
 #---------New Branch-----------------
- 	read -p "Enter first Number" num1
-   read -p "Enter Second Number" num2
-   read -p "Enter Third Number" num3
+ 	read -p "Enter first Number" a
+   read -p "Enter Second Number" b
+   read -p "Enter Third Number" c
 
-	echo "Three Numbers are = " $num1 " " $num2 " " $num3
+	echo "Three Numbers are = " $a " " $b " " $c
+
+#-----------New Branch-----------------
+
+
+ echo "Operation :- a + b * c "
+
+   solution1=$(( $a + ($b * $c) ))
+   echo $solution1
+
+
+#-----------New Branch-----------------
