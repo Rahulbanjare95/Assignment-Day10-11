@@ -28,4 +28,8 @@ echo "Welcome to the Arithmetic Computations Program"
 
 #----------New Branch------------------
 
-	
+	echo "Operation :-a * b + c "
+   solution4=$(( $a * $b + $c ))
+   echo $solution3
+
+
