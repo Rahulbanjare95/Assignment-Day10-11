@@ -41,9 +41,18 @@ echo "Welcome to the Arithmetic Computations Program"
 
 	echo "Adding Solutions Into a Dictionary"
 
-	declare -A solution
-	solution[1]=$(( $solution1 ));
-	solution[2]=$(( $solution2 ));
-	solution[3]=$(( $solution3 ));
-	solution[4]=$(( $solution4 ));
-	echo ${solution[@]}
+	declare -A solutiondic
+	solutiondic[1]=$(( $solution1 ));
+	solutiondic[2]=$(( $solution2 ));
+	solutiondic[3]=$(( $solution3 ));
+	solutiondic[4]=$(( $solution4 ));
+	echo "Dictionary = " ${solutiondic[@]}
+#---------------------New Branch-----------
+
+	echo "Converting Dictionary into Array  "
+
+	for (( j=1; j<5; j++ ))
+	do
+		arr[j]=$(( ${solutiondic[$j]} ))
+	done
+	echo "Array = "${arr[@]}
